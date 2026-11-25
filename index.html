@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emma & Pa Omar — Mariage</title>
-    
+
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -57,6 +60,7 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(212, 175, 55, 0.2);
         }
+
         .hero-bg {
             background-image: linear-gradient(rgba(44, 48, 46, 0.4), rgba(44, 48, 46, 0.45)), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000');
             background-size: cover;
@@ -64,16 +68,18 @@
         }
     </style>
 </head>
+
 <body class="font-sans bg-cream-50 text-charcoal antialiased selection:bg-sky-500 selection:text-white">
 
     <!-- NAVIGATION BAR -->
-    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-cream-50/90 backdrop-blur-md border-b border-cream-200">
+    <header id="header"
+        class="fixed w-full top-0 z-50 transition-all duration-300 bg-cream-50/90 backdrop-blur-md border-b border-cream-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="#hero" class="font-serif text-2xl sm:text-3xl font-semibold tracking-wider text-sky-800">
                     Emma <span class="text-gold-500 font-light">&amp;</span> Pa Omar
                 </a>
-                
+
                 <!-- Desktop Menu -->
                 <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-widest uppercase">
                     <a href="#histoire" class="text-charcoal hover:text-sky-600 transition">Notre Histoire</a>
@@ -84,33 +90,41 @@
                 </nav>
 
                 <!-- Mobile menu button -->
-                <button id="mobile-menu-btn" type="button" class="md:hidden text-charcoal focus:outline-none p-2" aria-label="Toggle Menu">
+                <button id="mobile-menu-btn" type="button" class="md:hidden text-charcoal focus:outline-none p-2"
+                    aria-label="Toggle Menu">
                     <i class="fa-solid fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-cream-50 border-b border-cream-200 px-4 pt-2 pb-6 space-y-4 text-center">
-            <a href="#histoire" class="block py-2 text-charcoal hover:text-sky-600 uppercase tracking-widest text-sm">Notre Histoire</a>
-            <a href="#programme" class="block py-2 text-charcoal hover:text-sky-600 uppercase tracking-widest text-sm">Programme</a>
-            <a href="#infos" class="block py-2 text-charcoal hover:text-sky-600 uppercase tracking-widest text-sm">Infos Pratiques</a>
-            <a href="#cagnotte" class="block py-2 text-charcoal hover:text-sky-600 uppercase tracking-widest text-sm">Cagnotte</a>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-cream-50 border-b border-cream-200 px-4 pt-2 pb-6 space-y-4 text-center">
+            <a href="#histoire"
+                class="block py-2 text-charcoal hover:text-sky-600 uppercase tracking-widest text-sm">Notre Histoire</a>
+            <a href="#programme"
+                class="block py-2 text-charcoal hover:text-sky-600 uppercase tracking-widest text-sm">Programme</a>
+            <a href="#infos" class="block py-2 text-charcoal hover:text-sky-600 uppercase tracking-widest text-sm">Infos
+                Pratiques</a>
+            <a href="#cagnotte"
+                class="block py-2 text-charcoal hover:text-sky-600 uppercase tracking-widest text-sm">Cagnotte</a>
             <a href="#rsvp" class="block py-2 text-gold-600 font-semibold uppercase tracking-widest text-sm">RSVP</a>
         </div>
     </header>
 
     <!-- SECTION 1: HERO HEADER -->
-    <section id="hero" class="hero-bg min-h-screen flex items-center justify-center pt-20 px-4 text-center text-white relative">
+    <section id="hero"
+        class="hero-bg min-h-screen flex items-center justify-center pt-20 px-4 text-center text-white relative">
         <div class="max-w-3xl mx-auto z-10 space-y-6">
-            <p class="uppercase tracking-widest text-sm sm:text-base text-cream-200 font-light">Nous allons nous dire OUI !</p>
+            <p class="uppercase tracking-widest text-sm sm:text-base text-cream-200 font-light">Nous allons nous dire
+                OUI !</p>
             <h1 class="font-serif text-5xl sm:text-7xl md:text-8xl font-normal leading-tight">
                 Emma <span class="font-serif italic text-gold-400 font-light">&amp;</span> Pa Omar
             </h1>
             <p class="font-serif text-xl sm:text-2xl text-cream-100 italic">
                 23 Janvier 2027 • Grenoble, France
             </p>
-            
+
             <div class="w-16 h-0.5 bg-gold-400 mx-auto my-6"></div>
 
             <!-- COMPTE À REBOURS -->
@@ -118,33 +132,39 @@
                 <p class="text-xs uppercase tracking-widest text-cream-200 mb-4">Le grand jour approche</p>
                 <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto">
                     <div class="bg-black/30 backdrop-blur-sm p-3 rounded-lg border border-white/10">
-                        <span id="days" class="block font-serif text-2xl sm:text-4xl font-semibold text-gold-400">00</span>
+                        <span id="days"
+                            class="block font-serif text-2xl sm:text-4xl font-semibold text-gold-400">00</span>
                         <span class="text-[10px] sm:text-xs uppercase tracking-wider text-cream-100">Jours</span>
                     </div>
                     <div class="bg-black/30 backdrop-blur-sm p-3 rounded-lg border border-white/10">
-                        <span id="hours" class="block font-serif text-2xl sm:text-4xl font-semibold text-gold-400">00</span>
+                        <span id="hours"
+                            class="block font-serif text-2xl sm:text-4xl font-semibold text-gold-400">00</span>
                         <span class="text-[10px] sm:text-xs uppercase tracking-wider text-cream-100">Heures</span>
                     </div>
                     <div class="bg-black/30 backdrop-blur-sm p-3 rounded-lg border border-white/10">
-                        <span id="minutes" class="block font-serif text-2xl sm:text-4xl font-semibold text-gold-400">00</span>
+                        <span id="minutes"
+                            class="block font-serif text-2xl sm:text-4xl font-semibold text-gold-400">00</span>
                         <span class="text-[10px] sm:text-xs uppercase tracking-wider text-cream-100">Min</span>
                     </div>
                     <div class="bg-black/30 backdrop-blur-sm p-3 rounded-lg border border-white/10">
-                        <span id="seconds" class="block font-serif text-2xl sm:text-4xl font-semibold text-gold-400">00</span>
+                        <span id="seconds"
+                            class="block font-serif text-2xl sm:text-4xl font-semibold text-gold-400">00</span>
                         <span class="text-[10px] sm:text-xs uppercase tracking-wider text-cream-100">Sec</span>
                     </div>
                 </div>
             </div>
 
             <div class="pt-6">
-                <a href="#rsvp" class="inline-block bg-gold-500 hover:bg-gold-600 text-charcoal font-semibold uppercase tracking-widest text-xs py-4 px-8 rounded-full transition transform hover:scale-105 shadow-lg">
+                <a href="#rsvp"
+                    class="inline-block bg-gold-500 hover:bg-gold-600 text-charcoal font-semibold uppercase tracking-widest text-xs py-4 px-8 rounded-full transition transform hover:scale-105 shadow-lg">
                     Confirmer ma présence
                 </a>
             </div>
         </div>
-        
+
         <!-- Flèche bas -->
-        <a href="#histoire" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-cream-200 hover:text-white transition animate-bounce">
+        <a href="#histoire"
+            class="absolute bottom-8 left-1/2 -translate-x-1/2 text-cream-200 hover:text-white transition animate-bounce">
             <i class="fa-solid fa-chevron-down text-xl"></i>
         </a>
     </section>
@@ -163,17 +183,24 @@
                     <div class="aspect-4/5 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                         <img src="img/img_a.JPG" alt="Emma et Pa omar" class="w-full h-full object-cover">
                     </div>
-                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-sky-100 rounded-full -z-10 hidden sm:block"></div>
-                    <div class="absolute -top-6 -left-6 w-24 h-24 border-2 border-gold-400 rounded-full -z-10 hidden sm:block"></div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-sky-100 rounded-full -z-10 hidden sm:block">
+                    </div>
+                    <div
+                        class="absolute -top-6 -left-6 w-24 h-24 border-2 border-gold-400 rounded-full -z-10 hidden sm:block">
+                    </div>
                 </div>
 
                 <div class="space-y-6 text-charcoal/80 leading-relaxed font-light text-base sm:text-lg">
-                    <h3 class="font-serif text-2xl text-sky-800 italic">"Certaines histoires d'amour s'écrivent avec évidence..."</h3>
+                    <h3 class="font-serif text-2xl text-sky-800 italic">"Certaines histoires d'amour s'écrivent avec
+                        évidence..."</h3>
                     <p>
-                        Après trois belles années de complicité, d'aventures partagées et de rires incalculables, nous avons décidé de sauter le pas et d'unir nos vies entourés des personnes qui nous sont les plus chères.
+                        Après trois belles années de complicité, d'aventures partagées et de rires incalculables, nous
+                        avons décidé de sauter le pas et d'unir nos vies entourés des personnes qui nous sont les plus
+                        chères.
                     </p>
                     <p>
-                        Nous sommes immensément heureux de vous inviter à célébrer ce moment magique avec nous au cœur des montagnes grenobloises. Votre présence sera notre plus beau cadeau.
+                        Nous sommes immensément heureux de vous inviter à célébrer ce moment magique avec nous au cœur
+                        des montagnes grenobloises. Votre présence sera notre plus beau cadeau.
                     </p>
                     <div class="pt-4 font-serif text-2xl text-gold-600 italic">
                         Emma &amp; Pa Omar
@@ -194,79 +221,120 @@
 
             <!-- TIMELINE -->
             <div class="relative border-l-2 border-gold-500/40 ml-4 sm:ml-32 space-y-12">
-                
+
                 <!-- Event 1 -->
                 <div class="relative pl-8 sm:pl-12">
-                    <div class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
+                    <div
+                        class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
                         <i class="fa-solid fa-building-columns"></i>
-                    </div>
-                    <div class="sm:absolute sm:-left-32 sm:top-1 sm:text-right w-24 mb-1 sm:mb-0">
-                        <span class="font-serif text-xl font-semibold text-gold-600">14:00</span>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-cream-200">
-                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-2">Cérémonie Civile</h3>
-                        <p class="text-sm text-gray-600 mb-2"><i class="fa-solid fa-location-dot text-gold-500 mr-1"></i> Hôtel de Ville, Saint Martin d'Héres</p>
-                        <p class="text-gray-700 font-light text-sm">Rassemblement sur le parvis dès 13h45 pour le premier "Oui".</p>
-                    </div>
-                </div>
-
-                <!-- Event 2 -->
-                <div class="relative pl-8 sm:pl-12">
-                    <div class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
-                        <i class="fa-solid fa-heart text-gold-600"></i>
                     </div>
                     <div class="sm:absolute sm:-left-32 sm:top-1 sm:text-right w-24 mb-1 sm:mb-0">
                         <span class="font-serif text-xl font-semibold text-gold-600">15:00</span>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-cream-200">
-                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-2">Séance photo</h3>
-                        <p class="text-sm text-gray-600 mb-2"><i class="fa-solid fa-location-dot text-gold-500 mr-1"></i>Hôtel de Ville, Saint Martin d'Héres</p>
-                        <p class="text-gray-700 font-light text-sm">Une séance de photo en plein air au cœur du parc.</p>
+                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-2">Cérémonie Civile</h3>
+                        <p class="text-sm text-gray-600 mb-2"><i
+                                class="fa-solid fa-location-dot text-gold-500 mr-1"></i> Hôtel de Ville, Saint Martin
+                            d'Héres</p>
+                        <p class="text-gray-700 font-light text-sm">Rassemblement sur le parvis dès 14h45 pour le
+                            premier "Oui".</p>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="relative pl-8 sm:pl-12">
+                    <div
+                        class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
+                        <i class="fa-solid fa-heart text-gold-600"></i>
+                    </div>
+                    <div class="sm:absolute sm:-left-32 sm:top-1 sm:text-right w-24 mb-1 sm:mb-0">
+                        <span class="font-serif text-xl font-semibold text-gold-600">15:20</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-cream-200">
+                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-2">Séance photo collectif devant la
+                            Mairie</h3>
+                        <p class="text-sm text-gray-600 mb-2"><i
+                                class="fa-solid fa-location-dot text-gold-500 mr-1"></i>Hôtel de Ville, Saint Martin
+                            d'Héres</p>
+                        <p class="text-gray-700 font-light text-sm">Une séance de photo en plein air devant l'hôtel de
+                            ville.</p>
                     </div>
                 </div>
 
                 <!-- Event 3 -->
                 <div class="relative pl-8 sm:pl-12">
-                    <div class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
+                    <div
+                        class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
                         <i class="fa-solid fa-wine-glass"></i>
                     </div>
                     <div class="sm:absolute sm:-left-32 sm:top-1 sm:text-right w-24 mb-1 sm:mb-0">
-                        <span class="font-serif text-xl font-semibold text-gold-600">17:00</span>
+                        <span class="font-serif text-xl font-semibold text-gold-600">16:00</span>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-cream-200">
-                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-2">Vin d'Honneur &amp; Cocktail</h3>
-                        <p class="text-sm text-gray-600 mb-2"><i class="fa-solid fa-location-dot text-gold-500 mr-1"></i> 4 Bis Rue Capitaine Belmont, 38100 GRENOBLE</p>
-                        <p class="text-gray-700 font-light text-sm">Rafraîchissements, pièces montées salées, musique live et photos de groupe.</p>
+                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-2">Vin d'Honneur &amp; Cocktail
+                        </h3>
+                        <p class="text-sm text-gray-600 mb-2"><i
+                                class="fa-solid fa-location-dot text-gold-500 mr-1"></i> Gymnase le Cube 170 le Clot,
+                            38190 BERNIN</p>
+                        <p class="text-gray-700 font-light text-sm">Rafraîchissements, pièces montées salées, musique
+                            live et photos de groupe.</p>
                     </div>
                 </div>
 
                 <!-- Event 4 -->
                 <div class="relative pl-8 sm:pl-12">
-                    <div class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
-                        <i class="fa-solid fa-utensils"></i>
+                    <div
+                        class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
+                        <i class="fa-solid fa-wine-glass"></i>
                     </div>
                     <div class="sm:absolute sm:-left-32 sm:top-1 sm:text-right w-24 mb-1 sm:mb-0">
-                        <span class="font-serif text-xl font-semibold text-gold-600">19:30</span>
+                        <span class="font-serif text-xl font-semibold text-gold-600">17:30</span>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-cream-200">
-                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-2">Dîner &amp; Soirée Dansante</h3>
-                        <p class="text-sm text-gray-600 mb-2"><i class="fa-solid fa-location-dot text-gold-500 mr-1"></i> 4 Bis Rue Capitaine Belmont, 38100 GRENOBLE</p>
-                        <p class="text-gray-700 font-light text-sm">Repas gastronomique suivi de l'ouverture de bal et fête jusqu'au bout de la nuit.</p>
+                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-2">Jeux d'animation</h3>
+                        <p class="text-sm text-gray-600 mb-2"><i
+                                class="fa-solid fa-location-dot text-gold-500 mr-1"></i> Gymnase le Cube 170 le Clot,
+                            38190 BERNIN</p>
+                        <p class="text-gray-700 font-light text-sm">Formez vos équipes et préparez-vous pour une série
+                            de défis ludiques et conviviaux !</p>
                     </div>
                 </div>
 
                 <!-- Event 5 -->
                 <div class="relative pl-8 sm:pl-12">
-                    <div class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
+                    <div
+                        class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="sm:absolute sm:-left-32 sm:top-1 sm:text-right w-24 mb-1 sm:mb-0">
+                        <span class="font-serif text-xl font-semibold text-gold-600">19:00</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-cream-200">
+                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-2">Dîner &amp; Soirée Dansante</h3>
+                        <p class="text-sm text-gray-600 mb-2"><i
+                                class="fa-solid fa-location-dot text-gold-500 mr-1"></i> Gymnase le Cube 170 le Clot,
+                            38190 BERNIN</p>
+                        <p class="text-gray-700 font-light text-sm">Repas gastronomique suivi de l'ouverture de bal et
+                            fête jusqu'au bout de la nuit.</p>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="relative pl-8 sm:pl-12">
+                    <div
+                        class="absolute -left-[17px] top-1 bg-cream-50 border-4 border-gold-500 w-8 h-8 rounded-full flex items-center justify-center text-sky-800 text-xs">
                         <i class="fa-solid fa-mug-hot"></i>
                     </div>
                     <div class="sm:absolute sm:-left-32 sm:top-1 sm:text-right w-24 mb-1 sm:mb-0">
-                        <span class="font-serif text-xl font-semibold text-gold-600">11:30 (Dim)</span>
+                        <span class="font-serif text-xl font-semibold text-gold-600">10:00 (Dim)</span>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-cream-200">
                         <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-2">Brunch du Lendemain</h3>
-                        <p class="text-sm text-gray-600 mb-2"><i class="fa-solid fa-location-dot text-gold-500 mr-1"></i> La Terrasse du Domaine</p>
-                        <p class="text-gray-700 font-light text-sm">Moment de détente informel et buffet gourmand pour prolonger la fête.</p>
+                        <p class="text-sm text-gray-600 mb-2"><i
+                                class="fa-solid fa-location-dot text-gold-500 mr-1"></i> 4 Bis Rue Capitaine Belmont,
+                            38100 GRENOBLE</p>
+                        <p class="text-gray-700 font-light text-sm">Moment de détente informel et buffet gourmand pour
+                            prolonger la fête.</p>
                     </div>
                 </div>
 
@@ -285,32 +353,42 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Lieu & Carte -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-cream-200 text-center flex flex-col justify-between">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-cream-200 text-center flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 bg-sky-50 text-sky-700 rounded-full flex items-center justify-center mx-auto mb-6 text-xl">
+                        <div
+                            class="w-14 h-14 bg-sky-50 text-sky-700 rounded-full flex items-center justify-center mx-auto mb-6 text-xl">
                             <i class="fa-solid fa-map-location-dot"></i>
                         </div>
                         <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-3">La Mairie</h3>
-                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                            111 avenue Ambroise Croizat CS 50007 <br>
-                            38400 Saint-Martin-d’Hères Cedex
+                        <p class="text-gray-600 text-sm mb-3 leading-relaxed">
+                            111 avenue Ambroise Croizat<br>
+                            38400 Saint-Martin-d’Hères
+                        </p>
+                        <p class="text-sky-700 bg-sky-50 px-3 py-2 rounded-lg text-xs font-medium mb-4">
+                            <i class="fa-solid fa-circle-info mr-1 text-gold-500"></i>
+                            Entrée de la salle à l’arrière de la mairie, côté Neyrpic (à côté du parking).
                         </p>
                     </div>
-                    <a href="https://www.google.com/maps/place/Mairie+de+Saint-Martin-d'H%C3%A8res/@45.1837824,5.7523581,17z/data=!3m1!4b1!4m6!3m5!1s0x478af527040414dd:0xa6657935ee03faac!8m2!3d45.1837786!4d5.754933!16s%2Fg%2F11b6dn_dy5?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-gold-600 font-semibold text-xs tracking-widest uppercase hover:underline mt-4">
+                    <a href="https://maps.app.goo.gl/Vb2uif4iTLFVK3h69" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center text-gold-600 font-semibold text-xs tracking-widest uppercase hover:underline mt-4">
                         Ouvrir sur Google Maps <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
                     </a>
                 </div>
-                
+
                 <!-- Dress Code & Recommandations -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-cream-200 text-center flex flex-col justify-between">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-cream-200 text-center flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 bg-sky-50 text-sky-700 rounded-full flex items-center justify-center mx-auto mb-6 text-xl">
+                        <div
+                            class="w-14 h-14 bg-sky-50 text-sky-700 rounded-full flex items-center justify-center mx-auto mb-6 text-xl">
                             <i class="fa-solid fa-user-tie"></i>
                         </div>
                         <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-3">Dress Code</h3>
                         <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                            <strong class="font-medium text-charcoal">Chic &amp; Champêtre</strong><br>
-                            Des touches de bleu ciel, blanc et doré sont les bienvenues pour de superbes harmonies de photos !
+                            <strong class="font-medium text-charcoal">Tenue libre & confortable</strong><br>
+                            L'essentiel est d'être à l'aise : venez comme vous êtes, avec votre plus beau sourire (et de
+                            bonnes chaussures pour danser !).
                         </p>
                     </div>
                     <div class="flex justify-center space-x-2 pt-2">
@@ -320,22 +398,38 @@
                     </div>
                 </div>
 
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-cream-200 text-center flex flex-col justify-between">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-cream-200 text-center flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 bg-sky-50 text-sky-700 rounded-full flex items-center justify-center mx-auto mb-6 text-xl">
+                        <div
+                            class="w-14 h-14 bg-sky-50 text-sky-700 rounded-full flex items-center justify-center mx-auto mb-6 text-xl">
                             <i class="fa-solid fa-map-location-dot"></i>
                         </div>
-                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-3">Le Domaine</h3>
+                        <h3 class="font-serif text-2xl text-sky-800 font-semibold mb-3">La Salle</h3>
                         <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                            4 Bis Rue Capitaine Belmont<br>
-                            38100 GRENOBLE
+                            Gymnase le Cube, 170 Le Clot <br>
+                            38190 BERNIN
                         </p>
                     </div>
-                    <a href="https://www.google.com/maps/place/4+Bis+Rue+Capitaine+Belmont,+38100+Grenoble/@45.1659828,5.7104571,17z/data=!3m1!4b1!4m6!3m5!1s0x478af4af5e55264d:0x1ec4dc4afbe1f79d!8m2!3d45.165979!4d5.713032!16s%2Fg%2F11ss7w3d78?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-gold-600 font-semibold text-xs tracking-widest uppercase hover:underline mt-4">
+                    <a href="https://maps.app.goo.gl/ruA2ftf2E11PWoU38" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center text-gold-600 font-semibold text-xs tracking-widest uppercase hover:underline mt-4">
                         Ouvrir sur Google Maps <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
                     </a>
                 </div>
             </div>
+        </div>
+
+        <!-- Encadré Consigne Sécurité (à placer juste après la grille des 3 cartes dans #infos) -->
+        <div class="mt-8 bg-white p-6 rounded-2xl shadow-sm border border-gold-400/50 text-center max-w-3xl mx-auto">
+            <div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-sky-50 text-gold-600 mb-3">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <h3 class="font-serif text-xl text-sky-800 font-semibold mb-2">Consigne importante</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+                Pour la sécurité de tous et le respect du règlement des lieux, l’usage de <strong
+                    class="text-charcoal font-medium">pétards, mortiers et feux d’artifice, et des chants à connotation religieuse</strong> est strictement
+                interdit autour de la mairie ainsi que dans la salle. Merci de votre compréhension !
+            </p>
         </div>
     </section>
 
@@ -351,35 +445,49 @@
             <div class="bg-white text-charcoal rounded-2xl p-6 sm:p-10 shadow-2xl">
                 <!-- Intégration Formspree -->
                 <form id="rsvp-form" action="https://formspree.io/f/meaapzgd" method="POST" class="space-y-6">
-                    
+
                     <!-- Nom et Prénom -->
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div>
-                            <label for="nom" class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Votre Nom *</label>
-                            <input type="text" id="nom" name="nom" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
+                            <label for="nom"
+                                class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Votre Nom
+                                *</label>
+                            <input type="text" id="nom" name="nom" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
                         </div>
                         <div>
-                            <label for="prenom" class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Votre Prénom *</label>
-                            <input type="text" id="prenom" name="prenom" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
+                            <label for="prenom"
+                                class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Votre
+                                Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
                         </div>
                     </div>
 
                     <!-- email -->
                     <div>
-                        <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Adresse Email *</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
+                        <label for="email"
+                            class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Adresse Email
+                            *</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
                     </div>
 
                     <!-- Présence -->
                     <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Serez-vous parmi nous ? *</label>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Serez-vous
+                            parmi nous ? *</label>
                         <div class="grid grid-cols-2 gap-4">
-                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-sky-50 transition border-gray-300">
-                                <input type="radio" name="presence" value="Oui, avec grand plaisir !" checked class="text-sky-600 focus:ring-sky-500">
+                            <label
+                                class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-sky-50 transition border-gray-300">
+                                <input type="radio" name="presence" value="Oui, avec grand plaisir !" checked
+                                    class="text-sky-600 focus:ring-sky-500">
                                 <span class="ml-3 font-medium text-sm">Oui, avec grand plaisir ! 🎉</span>
                             </label>
-                            <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-sky-50 transition border-gray-300">
-                                <input type="radio" name="presence" value="Malheureusement non" class="text-sky-600 focus:ring-sky-500">
+                            <label
+                                class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-sky-50 transition border-gray-300">
+                                <input type="radio" name="presence" value="Malheureusement non"
+                                    class="text-sky-600 focus:ring-sky-500">
                                 <span class="ml-3 font-medium text-sm">Malheureusement non 😢</span>
                             </label>
                         </div>
@@ -389,8 +497,11 @@
                     <div id="details-presence" class="space-y-6">
                         <div class="grid sm:grid-cols-2 gap-6">
                             <div>
-                                <label for="adultes" class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Nombre d'adultes</label>
-                                <select id="adultes" name="adultes" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none">
+                                <label for="adultes"
+                                    class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Nombre
+                                    d'adultes</label>
+                                <select id="adultes" name="adultes"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none">
                                     <option value="1">1 Personne</option>
                                     <option value="2">2 Personnes</option>
                                     <option value="3">3 Personnes</option>
@@ -398,8 +509,11 @@
                                 </select>
                             </div>
                             <div>
-                                <label for="enfants" class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Nombre d'enfants</label>
-                                <select id="enfants" name="enfants" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none">
+                                <label for="enfants"
+                                    class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Nombre
+                                    d'enfants</label>
+                                <select id="enfants" name="enfants"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none">
                                     <option value="0">Aucun</option>
                                     <option value="1">1 Enfant</option>
                                     <option value="2">2 Enfants</option>
@@ -409,42 +523,58 @@
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Moments de présence</label>
+                            <label
+                                class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Moments
+                                de présence</label>
                             <div class="space-y-2">
                                 <label class="flex items-center">
-                                    <input type="checkbox" id="ceremonie" name="ceremonie" value="Oui" checked class="rounded text-sky-600 focus:ring-sky-500">
+                                    <input type="checkbox" id="ceremonie" name="ceremonie" value="Oui" checked
+                                        class="rounded text-sky-600 focus:ring-sky-500">
                                     <span class="ml-2 text-sm">Cérémonie &amp; Cocktail</span>
                                 </label>
                                 <label class="flex items-center">
-                                    <input type="checkbox" id="diner" name="diner" value="Oui" checked class="rounded text-sky-600 focus:ring-sky-500">
+                                    <input type="checkbox" id="diner" name="diner" value="Oui" checked
+                                        class="rounded text-sky-600 focus:ring-sky-500">
                                     <span class="ml-2 text-sm">Dîner &amp; Soirée</span>
                                 </label>
                                 <label class="flex items-center">
-                                    <input type="checkbox" id="brunch" name="brunch" value="Oui" checked class="rounded text-sky-600 focus:ring-sky-500">
+                                    <input type="checkbox" id="brunch" name="brunch" value="Oui" checked
+                                        class="rounded text-sky-600 focus:ring-sky-500">
                                     <span class="ml-2 text-sm">Brunch du dimanche</span>
                                 </label>
                             </div>
                         </div>
 
                         <div>
-                            <label for="regime" class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Régimes particuliers / Allergies</label>
-                            <input type="text" id="regime" name="regime" placeholder="Ex: Végétarien, sans gluten, allergie arachide..." class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
+                            <label for="regime"
+                                class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Régimes
+                                particuliers / Allergies</label>
+                            <input type="text" id="regime" name="regime"
+                                placeholder="Ex: Végétarien, sans gluten, allergie arachide..."
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
                         </div>
 
                         <div>
-                            <label for="chanson" class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Une chanson qui vous fait danser à coup sûr ?</label>
-                            <input type="text" id="chanson" name="chanson" placeholder="Titre - Artiste" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
+                            <label for="chanson"
+                                class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Une
+                                chanson qui vous fait danser à coup sûr ?</label>
+                            <input type="text" id="chanson" name="chanson" placeholder="Titre - Artiste"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition">
                         </div>
                     </div>
 
                     <!-- Message aux mariés -->
                     <div>
-                        <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Un petit mot pour les mariés</label>
-                        <textarea id="message" name="message" rows="3" placeholder="Votre message..." class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition"></textarea>
+                        <label for="message"
+                            class="block text-xs font-semibold uppercase tracking-wider text-sky-800 mb-2">Un petit mot
+                            pour les mariés</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Votre message..."
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sky-500 focus:outline-none transition"></textarea>
                     </div>
 
                     <!-- Bouton envoi -->
-                    <button type="submit" id="submit-btn" class="w-full bg-gold-500 hover:bg-gold-600 text-charcoal font-semibold uppercase tracking-widest text-xs py-4 px-8 rounded-lg transition transform active:scale-95 shadow-lg">
+                    <button type="submit" id="submit-btn"
+                        class="w-full bg-gold-500 hover:bg-gold-600 text-charcoal font-semibold uppercase tracking-widest text-xs py-4 px-8 rounded-lg transition transform active:scale-95 shadow-lg">
                         Envoyer ma réponse
                     </button>
                 </form>
@@ -457,16 +587,20 @@
         <div class="max-w-4xl mx-auto text-center space-y-8">
             <div class="space-y-3">
                 <span class="text-gold-600 font-serif italic text-xl">Voyage de Noces</span>
-                <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-sky-800">Liste de Mariage &amp; Cagnotte</h2>
+                <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-sky-800">Liste de Mariage &amp; Cagnotte
+                </h2>
                 <div class="w-12 h-0.5 bg-gold-500 mx-auto"></div>
             </div>
 
             <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed font-light">
-                Votre présence à nos côtés pour célébrer notre union est le plus beau des cadeaux. Si toutefois vous souhaitez contribuer à notre voyage de noces de rêve en Polynésie, une cagnotte en ligne est mise à votre disposition.
+                Votre présence à nos côtés pour célébrer notre union est le plus beau des cadeaux. Si toutefois vous
+                souhaitez contribuer à notre voyage de noces de rêve en Japon, une cagnotte en ligne est mise à
+                votre disposition.
             </p>
 
             <div class="pt-4">
-                <a href="https://www.onparticipe.fr/c/lImPuReJ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-sky-700 hover:bg-sky-800 text-white font-semibold uppercase tracking-widest text-xs py-4 px-8 rounded-full transition transform hover:scale-105 shadow-md">
+                <a href="https://www.onparticipe.fr/c/lImPuReJ" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center bg-sky-700 hover:bg-sky-800 text-white font-semibold uppercase tracking-widest text-xs py-4 px-8 rounded-full transition transform hover:scale-105 shadow-md">
                     <i class="fa-solid fa-gift mr-3 text-gold-400"></i> Participer à la cagnotte en ligne
                 </a>
             </div>
@@ -483,22 +617,26 @@
                 Hâte de vous retrouver le 23 Janvier 2027
             </p>
             <div class="text-xs text-gray-500 pt-6">
-                Pour toute question : <a href="mailto:paomar8@gmail.com" class="text-gold-400 hover:underline">paomar8@gmail.com</a>
+                Pour toute question : <a href="mailto:paomar8@gmail.com"
+                    class="text-gold-400 hover:underline">paomar8@gmail.com</a>
             </div>
         </div>
     </footer>
 
     <!-- MODAL DE CONFIRMATION RSVP -->
-    <div id="modal-confirmation" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div id="modal-confirmation"
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
         <div class="bg-white rounded-2xl max-w-md w-full p-8 text-center space-y-6 shadow-2xl">
-            <div class="w-16 h-16 bg-sky-100 text-sky-700 rounded-full flex items-center justify-center mx-auto text-2xl">
+            <div
+                class="w-16 h-16 bg-sky-100 text-sky-700 rounded-full flex items-center justify-center mx-auto text-2xl">
                 <i class="fa-solid fa-check"></i>
             </div>
             <h3 class="font-serif text-3xl text-sky-800 font-semibold">Merci beaucoup !</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
                 Votre réponse a bien été enregistrée. Nous avons vraiment hâte de célébrer ce moment magique avec vous !
             </p>
-            <button id="close-modal" class="bg-gold-500 hover:bg-gold-600 text-charcoal uppercase tracking-widest text-xs font-semibold py-3 px-6 rounded-lg transition w-full">
+            <button id="close-modal"
+                class="bg-gold-500 hover:bg-gold-600 text-charcoal uppercase tracking-widest text-xs font-semibold py-3 px-6 rounded-lg transition w-full">
                 Fermer
             </button>
         </div>
@@ -613,4 +751,5 @@
         });
     </script>
 </body>
+
 </html>
