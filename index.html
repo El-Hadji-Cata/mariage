@@ -688,7 +688,8 @@
         updateCountdown();
 
         // 3. Formulaire RSVP (Envoi simultané Formspree + Google Sheets)
-        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzt8ZuxTp2AcpN8HNkOdAlz_uO4AOrpi7Ty1yldxIzNi5DUD4U8unB3vzxQt6-tU3o-/exec";
+        const GOOGLE_SCRIPT_URL1 = "https://script.google.com/macros/s/AKfycbzt8ZuxTp2AcpN8HNkOdAlz_uO4AOrpi7Ty1yldxIzNi5DUD4U8unB3vzxQt6-tU3o-/exec";
+        const GOOGLE_SCRIPT_URL2 = "https://script.google.com/macros/s/AKfycbz5rTwkXb5h8tot-dFX5Uosaqabhw6WZ7PvL4Yl2uCZ3BTcxhrUOtj_9HZUDv3OqbZh/exec";
 
         const rsvpForm = document.getElementById('rsvp-form');
         const presenceRadios = document.getElementsByName('presence');
@@ -725,9 +726,19 @@
                     })
                 ];
 
-                if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL.startsWith("http")) {
+                if (GOOGLE_SCRIPT_URL1 && GOOGLE_SCRIPT_URL1.startsWith("http")) {
                     requests.push(
-                        fetch(GOOGLE_SCRIPT_URL, {
+                        fetch(GOOGLE_SCRIPT_URL1, {
+                            method: 'POST',
+                            body: formData,
+                            mode: 'no-cors'
+                        })
+                    );
+                }
+
+                if (GOOGLE_SCRIPT_URL2 && GOOGLE_SCRIPT_URL2.startsWith("http")) {
+                    requests.push(
+                        fetch(GOOGLE_SCRIPT_URL2, {
                             method: 'POST',
                             body: formData,
                             mode: 'no-cors'
