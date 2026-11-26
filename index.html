@@ -687,7 +687,9 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // 3. Formulaire RSVP avec Formspree
+        // 3. Formulaire RSVP (Envoi simultané Formspree + Google Sheets)
+        const GOOGLE_SCRIPT_URL = "Chttps://script.google.com/macros/s/AKfycbzY3QcrwkiB-D3CNlXcjeOTiTpxS9ssR67XjZR7QAal1P9yBHZVcivhqmgbA4QAPnui/exec";
+
         const rsvpForm = document.getElementById('rsvp-form');
         const presenceRadios = document.getElementsByName('presence');
         const detailsPresence = document.getElementById('details-presence');
@@ -715,17 +717,30 @@
             const formData = new FormData(rsvpForm);
 
             try {
-                const response = await fetch(rsvpForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
+                const requests = [
+                    fetch(rsvpForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    })
+                ];
 
-                if (response.ok) {
+                if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL.startsWith("http")) {
+                    requests.push(
+                        fetch(GOOGLE_SCRIPT_URL, {
+                            method: 'POST',
+                            body: formData,
+                            mode: 'no-cors'
+                        })
+                    );
+                }
+
+                const [formspreeRes] = await Promise.all(requests);
+
+                if (formspreeRes.ok) {
                     modalConfirmation.classList.remove('hidden');
                     rsvpForm.reset();
+                    detailsPresence.classList.remove('hidden');
                 } else {
                     alert("Une erreur est survenue lors de l'envoi. Veuillez réessayer.");
                 }
